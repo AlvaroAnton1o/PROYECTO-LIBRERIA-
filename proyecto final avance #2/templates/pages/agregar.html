@@ -1,0 +1,45 @@
+{% include 'header.html' %}
+
+<form id="frmLibro" method="post" action="{{url_for('guardarLibro')}}">
+    <div class="container" > 
+        <div class="card text-bg-dark mb-3" style="max-width: 40rem; " >
+            <div class="card-header">Administracion de libro</div>
+            <div class="card-body text-primary">
+                <div class="row m-1">
+                    <div class="col">CODIGO</div>
+                    <div class="col col-md-2">
+                        <input class="form-control" type="text" name="txtCodigo" id="txtCodigo">
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col">NOMBRE</div>
+                    <div class="col col-md-4">
+                        <input class="form-control" type="text" name="txtNombre" id="txtNombre">
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col">Categoria</div>
+                    <div class="col col-md-5">
+                        <input class="form-control" type="text" name="txtCategoria" id="txtCategoria">
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col">Autor</div>
+                    <div class="col col-md-3">
+                        <input class="form-control" type="text" name="txtAutor" id="txtAutor">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-3">
+                        <input class="btn btn-primary" type="submit" value="GUARDAR">
+                    </div>
+                    <div class="col col-md-3">
+                        <input class="btn btn-warning" type="reset" value="NUEVO">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+{% include 'footer.html' %}
