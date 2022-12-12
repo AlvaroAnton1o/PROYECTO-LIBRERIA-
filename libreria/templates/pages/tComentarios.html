@@ -1,0 +1,25 @@
+{% include 'header.html' %}
+
+<div class="containerT">
+    <span class="v">Take a view from our users comments</span>
+</div>
+<br><br><br>
+
+<span class="free">We are sure all this comments are free of spam</span>
+
+<br><br><br>
+
+<ul class="list-group">
+    <li class="list-group-item list-group-item-primary"></li>
+    {% for i in range(0, lenComment) %}
+        <li class="list-group-item list-group-item-secondary">{{users[i]}}:   {{comments[i]}}</li>
+        <li class="list-group-item list-group-item-primary"></li>
+        <br>
+    {% endfor %}
+</ul>
+<br><br>
+<div class="flex">
+    <a href="{{url_for('comentarios')}}" class="btn btn-secondary">New Comment</a>
+    
+</div>
+{% include 'footer.html' %}

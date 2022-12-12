@@ -1,0 +1,147 @@
+/* My Styles */
+html,
+body {
+  height: 100%;
+}
+
+.global-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+form {
+  padding-top: 10px;
+  font-size: 14px;
+  margin-top: 30px;
+}
+
+.card-title {
+  font-weight: 300;
+}
+
+.btn {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.login-form {
+  width: 330px;
+  margin: 20px;
+}
+
+.sign-up {
+  text-align: center;
+  padding: 20px 0 0;
+}
+
+.alert {
+  margin-bottom: -30px;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+
+.flex{
+  display: grid;
+  justify-content: center;
+
+}
+.slogan{
+  font-family: fantasy;
+  font-style: oblique;
+  font-size: 40px;
+  font-weight: 600px;
+
+}
+
+.cabecera{
+  display: grid;
+  justify-content:center;
+  height: 100px; 
+}
+
+.cabecera h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  font-style: bold;
+  background-color: white;
+  
+}
+
+.footer{
+  display: grid;
+  justify-content:center;
+  background-image: url('/static/images/head.png');
+  height: 212px;
+
+  padding-top: 40px;
+  padding: 2rem 3rem;
+  text-align: center;
+  color: #fff
+  border 3px solid #fff;
+  box-sizing: 0px 0px 23px #222;
+  backdrop-filter: blur(100px);
+
+}
+
+.cabecera h5{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  background-color: white;  
+}
+
+.comments{
+  display: grid;
+  justify-content:center;
+
+}
+.comments label{
+  font-size: 25px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+}
+
+.comments input{
+  width: 300px;
+}
+.comments textarea{
+  width: 300px;
+}
+
+.containerT{
+  background-image: url('/static/images/libros.png');
+  border: 11px double #000;
+  height: 200px;
+
+}
+
+.containerT .v{
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 210px;
+  font-size:50px;
+  font-weight:900
+
+}
+.containerT .tittle {
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+  width: 210px;
+  font-size:50px;
+  font-weight:900
+}
+
+span{
+  text-align: center;
+  align-content: center;
+  margin: 0 auto;
+  font-style: oblique;
+  width: 210px;
+  font-size:50px;
+  font-weight:200
+}

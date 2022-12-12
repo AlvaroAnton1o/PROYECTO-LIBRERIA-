@@ -1,0 +1,29 @@
+{% include 'header.html' %}
+{% with messages= get_flashed_messages()  %}
+{% if messages %}
+    <div class="alert alert-secondary" role="alert">
+        {% for message in messages %}
+            {{message}}
+        {% endfor %}    
+    </div>
+{% endif %}
+    
+{% endwith   %}
+<div class="cabecera">
+    <h1>Please helping us to get better our site</h1>
+    <h5>Spams are detected automatically</h5>
+</div>
+
+<div class="comments">
+    <form action="/comments" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment"></textarea><br><br>
+        <input type="submit" class="btn btn-success" value="Send">
+      </form>
+</div>
+
+<!-- <textarea class="form-control" rows="3"></textarea> -->
+
+{% include 'footer.html' %}
